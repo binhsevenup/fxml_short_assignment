@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="654.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.AccountController">
+   <children>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="30.0" prefHeight="400.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="columnUsername" prefWidth="400.0" text="Username" />
+            <TableColumn fx:id="columnAvatar" prefWidth="200.0" text="Avatar" />
+            <TableColumn fx:id="columnRemainTime" prefWidth="400.0" text="Remain Time" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnUpdate" layoutX="605.0" layoutY="594.0" onAction="#doUpdate" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #557edc;" text="Diactive" />
+      <JFXButton fx:id="btnDiactive" layoutX="270.0" layoutY="594.0" onAction="#doDeactive" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: #557edc;" text="Update" />
+      <JFXTextField fx:id="txtFullname" layoutX="750.0" layoutY="452.0" prefHeight="35.0" prefWidth="245.0" promptText="Fullname" />
+      <JFXTextField fx:id="txtPassword" layoutX="25.0" layoutY="515.0" prefHeight="35.0" prefWidth="245.0" promptText="Password" />
+      <JFXTextField fx:id="txtUsername" layoutX="25.0" layoutY="452.0" prefHeight="35.0" prefWidth="245.0" promptText="Username" />
+      <JFXTextField fx:id="txtAvatar" layoutX="403.0" layoutY="452.0" prefHeight="35.0" prefWidth="245.0" promptText="Avatar" />
+      <JFXTextField fx:id="txtRemain" layoutX="403.0" layoutY="515.0" prefHeight="35.0" prefWidth="245.0" promptText="Remain" />
+      <JFXTextField fx:id="txtStatus" layoutX="750.0" layoutY="515.0" prefHeight="35.0" prefWidth="245.0" promptText="Status" />
+   </children>
+</AnchorPane>
